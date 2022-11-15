@@ -15,8 +15,10 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 #
-echo '添加Passwall依赖feeds'
+echo '添加依赖feeds'
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 echo '=========Add passwall feeds source OK!========='
 
 echo '添加Passwall软件源'
